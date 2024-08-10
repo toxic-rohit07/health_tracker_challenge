@@ -1,0 +1,43 @@
+<nz-layout class="layout">
+  <nz-sider>
+    <div class="logo">
+   <img
+   src="https://www.google.com/search?sca_esv=e52debdf81d4b9f2&sca_upv=1&rlz=1C1UEAD_enJP1105JP1105&sxsrf=ADLYWIL7FBvkSs-sOdf7GZTv2vdeCdT1nw:1723281857699&q=man+avatar+icon+for+html&udm=2&fbs=AEQNm0CFDpRHaDHkXm_YXueHTfHtrgIXUKlluACpCix4T5ZoUSz6e3GWv4zN_09JkP2cR-DwqD-ER1CSuTjXzdXNKT0Wma9mNyum3oWLzhs1xt8u5GJdCx58_F0ZS8HPQnKQz9WgsdJpThHV1BWzodOO8E_BatEjT0dIL3U5ECu78v7bqTooU6tI88M-Qrvjqh0VwmagWSscc3JaO_0BmvDToqXs55uEqQ&sa=X&ved=2ahUKEwjLmueXjeqHAxXgUWwGHXQWGCcQtKgLegQIERAB&biw=1536&bih=695&dpr=1.25#vhid=SyYgJSzWEGNWtM&vssid=mosaic"
+   alt="avatar" class="avatar"/>
+   <div class="user-info">
+    <strong>Rohit</strong>
+   </div>
+    </div>
+
+    <ul nz-menu nzTheme="dark" nzMode="inline">
+      <li nz-menu-item routerLink="/dashboard">
+        <span nz-icon nzType="dashboard"></span>
+        <span>Dashboard</span>
+      </li>
+
+      <li nz-menu-item routerLink="/workout">
+        <span nz-icon nzType="split-cells"></span>
+        <span>Workout</span>
+      </li>
+
+      <li nz-menu-item routerLink="/activity">
+        <span nz-icon nzType="control"></span>
+        <span>Activity</span>
+      </li>
+
+      <li nz-menu-item routerLink="/goal">
+        <span nz-icon nzType="fund"></span>
+        <span>Goal</span>
+      </li>
+
+    </ul>
+  </nz-sider>
+
+  <nz-layout class="right-layout">
+    <nz-content>
+      <div class="inner-content">
+        <router-outlet></router-outlet>
+      </div>
+    </nz-content>
+  </nz-layout>
+</nz-layout>
